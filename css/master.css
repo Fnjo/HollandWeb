@@ -1,0 +1,505 @@
+@font-face {
+    font-family: coolvetica;
+    src: url(../font/coolvetica_rg.ttf);
+}
+
+@font-face {
+    font-family: helveticaneue;
+    src: url(../font/HelveticaNeue.dfont);
+}
+
+p{
+
+  font-size: 17px;
+}
+
+h1{
+  display: none;
+}
+
+h1+img{
+  width: 170px;
+}
+
+h2{
+  color: #fc6721;
+  font-size: 40px;
+  font-family: coolvetica;
+  padding-bottom: 80px;
+}
+
+nav{
+  padding: 0 5%;
+}
+
+#page1, #page2, #page3, #page4, #page5{
+  padding: 60px 0;
+}
+
+a{
+  text-decoration: none;
+  color:#fc6721;
+}
+
+a:hover{
+  color: #fff;
+}
+
+.slick-dots li button:before {
+  content:"";
+}
+
+.slick-dots li button {
+  border-radius: 10px;
+  border: 3px solid #fff;
+  background:rgba(0,0,0,0.1);
+}
+li.slick-active button {
+  background:rgba(0,0,0,0.5);
+}
+
+/* START NAV */
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #000;
+
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #000000;
+}
+
+.navbar-brand{
+  height: auto;
+}
+
+.navbar-brand h1 span{
+    color: #757c83
+}
+
+.navbar-brand h1{
+  margin-top: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+}
+.navbar-default{
+  background: #fff;
+  border: none;
+  min-height: 80px;
+}
+.navbar-toggle{
+  margin-top: 22px;
+}
+.navbar-default .navbar-nav>li>a{
+  color: #757c83;
+  padding: 2px 24px;
+  font-weight: 1em;
+}
+.navbar-default .navbar-nav>li:last-child>a{
+  border-right: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+
+.nav{
+  margin-top: 28px;
+  float: right;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: #fc6721;
+}
+
+.navbar-default .navbar-nav>.active>a:hover{
+  color: #000000;
+}
+
+.navbar-default .navbar-nav>.active>a{
+  background: none;
+  color: #000;
+}
+
+@media (max-width: 1000px) {
+
+    .navbar.navbar-fixed-top .navbar-nav>li.active>a {
+        color: #fff;
+    }
+
+  li.active::before {
+    content: none;
+  }
+  li::before{
+    content: none;
+  }
+
+  .navbar-nav>li::before{
+    height: 0;
+  }
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        margin: 0;
+        border-radius: 0;
+        height: 82px;
+        width: 82px;
+    }
+
+    .menutext{
+      color: #fff;
+      font-size: 18px;
+      margin-top: 5px;
+      display: block;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar{
+      background-color: #fff;
+    }
+
+    .navbar-toggle .icon-bar{
+      width: 54px;
+      margin-left: 4px;
+      height: 3px;
+    }
+
+    .icon-bar{
+      margin-top: 7px;
+    }
+
+    .navbar-toggle .icon-bar+.icon-bar {
+      margin-top: 8px;
+    }
+
+    .navbar-default .navbar-toggle {
+      background-color: #fc6721;
+      border: none;
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+      background-color: #fc6721;
+    }
+
+    .navbar-collapse {
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        border-right: none !important;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+   .navbar-nav .open .dropdown-menu {
+       position: static;
+       float: none;
+       width: auto;
+       margin-top: 0;
+       background-color: transparent;
+       border: 0;
+       -webkit-box-shadow: none;
+       box-shadow: none;
+    }
+}
+
+/* END NAV */
+
+#landingpage .btn{
+  border: 1px solid #fc6721;
+  background: 000;
+  color: #fc6721;
+  padding: 12px;
+  display: block;
+  width: 180px;
+}
+
+#page2 .btn{
+  border: 1px solid #fc6721;
+  background: 000;
+  color: #fc6721;
+  padding: 12px;
+  margin-top: 70px;
+  width: 250px;
+}
+
+#page2 .btn:hover, #page2 a:hover,
+#landingpage .btn:hover, #landingpage a:hover{
+  background: #fc6721;
+  color: #fff;
+}
+
+#landingpage{
+  background-image: url("../img/landingspage.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#landingpage h2{
+  color: #fff;
+  font-size: 70px;
+  margin-top: 35vh;
+  padding-bottom: 10px;
+}
+
+#page1{
+  padding-left: 10%;
+  padding-right: 10%;
+  background-image: url("../img/1bg.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center right;
+}
+
+#page1 img{
+  height: 70px;
+  margin: auto;
+}
+
+#page1 p{
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+#page1 h3{
+  padding: 10px 0 20px 0 ;
+  color: #647984;
+}
+
+#page2{
+  background: #f0f0f0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#page2 .row .col-md-3{
+  float: none;
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: center;
+  padding-top: 50px;
+  width: 25vw;
+}
+
+#page2 img{
+  width: 20%;
+  min-width: 45px;
+  padding-bottom: 20px;
+}
+
+#page2 p.col-md-12{
+  margin-top: 40px;
+}
+
+.slider2 .col-xs-6{
+  max-width: 45%;
+  text-align: center;
+  margin: auto;
+  float: none;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.slider2 .col-xs-6 img{
+  display: inline-block;
+  margin: auto;
+}
+
+.slider2 .left{
+  padding-left: 10%;
+}
+
+.slider2 .left2{
+  padding-left: 16%;
+}
+
+.slider2 .right{
+  padding-right: 10%;
+}
+
+.slider2 .right2{
+  padding-left: 8%;
+}
+
+#page4{
+  background: #f0f0f0;
+}
+
+#page5 p{
+  margin-bottom: 2em;
+  color: #fff;
+  font-weight: 100;
+}
+
+#page5 h3{
+  color: #fc6721;
+}
+
+#page5{
+  background: #243545;
+}
+
+#page5 ul{
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+#page5 ul.social{
+  margin-top: 30px;
+}
+
+#page5 ul.social li{
+  float: left;
+  padding: 10px;
+  font-weight: lighter;
+}
+
+#page5 img{
+  width: 80%;
+}
+
+.menudesk{
+  color: #fff;
+}
+
+input.form-control{
+  background: #19242f;
+  height: 50px;
+  border: 2px solid #19242f;
+  color: #fff;
+}
+
+select.form-control{
+  background: #19242f;
+  height: 50px;
+  border: 2px solid #19242f;
+  color: #fff;
+}
+
+.contacticon{
+  font-weight: bold;
+  color: #fc6721;
+}
+
+.form-horizontal .control-label{
+  text-align: left !important;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+textarea.form-control{
+  background: #19242f;
+  border: 2px solid #19242f;
+}
+
+.form-group{
+  margin-bottom: 0;
+}
+
+#singlebutton{
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #fc6721;
+  background: 000;
+  color: #fc6721;
+}
+
+#call{
+  position: fixed;
+  right: -53px;
+  top: 40%;
+  z-index: 110;
+  transform: rotate(90deg);
+}
+
+#call #icon{
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #e7520d;
+  height: 40px;
+  display: block;
+  float: left;
+  padding: 10px;
+}
+
+#call #nummer{
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fc6721;
+  height: 40px;
+  display: block;
+  float: left;
+  color: #fff;
+  padding: 10px;
+}
+
+#call img{
+  width: 1.5em;
+}
+
+@media (max-width: 550px) {
+  #page1{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #landingpage{
+    background-image: url("../img/landingmob.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #landingpage h2{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 40vh;
+    padding-bottom: 10px;
+  }
+
+  nav{
+    padding: 0 0;
+  }
+
+  #page5{
+    padding: 0 3%;
+  }
+}
